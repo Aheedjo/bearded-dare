@@ -1,15 +1,11 @@
-import { useState } from "react";
+import { useGlobalContext } from "../../context/context";
 import Image from "next/image";
 import cart from "../../assets/cart.svg";
 import styles from "./Cart.module.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const Cart = () => {
-    const [showCart, setShowCart] = useState(false);
-
-    const toggleCart = () => {
-        setShowCart(!showCart);
-    };
+    const { showCart, toggleCart, closeCart } = useGlobalContext();
 
     return (
         <>
@@ -22,7 +18,7 @@ const Cart = () => {
                     <AiFillCloseCircle className={styles.close} onClick={toggleCart} />
                 </div>
             </div>
-            <div className={styles.backdrop} onClick={() => setShowCart(false)}></div>
+            <div className={styles.backdrop} onClick={closeCart}></div>
         </>
     );
 };

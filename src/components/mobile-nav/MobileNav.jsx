@@ -20,9 +20,12 @@ const MobileNav = () => {
 
     return (
         <>
+            <div className={styles.backdrop} onClick={() => setShowNav(false)}></div>
+
             <div className={styles.hamburger} onClick={toggleNav}>
                 <RxHamburgerMenu className={styles.hamburgerImg} />
             </div>
+
             <div className={showNav ? `${styles.mobileMenu} ${styles.active}` : styles.mobileMenu}>
                 <div>
                     <div className={styles.close} onClick={toggleNav}>

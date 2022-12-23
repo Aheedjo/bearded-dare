@@ -1,0 +1,23 @@
+.navCont {
+    @apply py-5 flex items-center justify-between;
+
+    .logo {
+        @apply w-12 h-12;
+
+        .image {
+            @apply object-cover;
+        }
+    }
+
+    .links {
+        @apply hidden md:flex items-center gap-7;
+
+        .link {
+            @apply hover:text-lg transition-all;
+        }
+    }
+
+    .hamburgerXcart {
+        @apply flex items-center gap-3;
+    }
+}

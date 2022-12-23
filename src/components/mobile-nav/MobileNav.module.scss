@@ -1,0 +1,48 @@
+.hamburger {
+    @apply w-10 h-10 rounded-full bg-Primary grid place-items-center cursor-pointer;
+}
+
+.hamburger {
+    @apply grid md:hidden place-items-center;
+
+    .hamburgerImg {
+        @apply w-5 h-5 object-cover;
+    }
+}
+
+.mobileMenu {
+    @apply absolute w-[60%] h-screen bg-Primary top-0 right-0 rounded-tl-3xl p-5 sm:p-7 pb-10;
+    @apply flex md:hidden flex-col justify-between translate-x-full transition-all;
+
+    .close {
+        @apply w-full flex justify-end;
+
+        .closeImg {
+            @apply w-10 h-10 object-cover text-Secondary cursor-pointer;
+        }
+    }
+
+    .links {
+        @apply pt-10 flex flex-col gap-5;
+
+        .link {
+            @apply text-xl hover:text-2xl transition-all;
+        }
+    }
+
+    .contact {
+        @apply flex flex-col gap-2 sm:gap-3 mb-3;
+    }
+
+    .socialLinks {
+        @apply flex items-center gap-5 pt-3;
+
+        .socialLink {
+            @apply text-2xl;
+        }
+    }
+}
+
+.active {
+    @apply translate-x-0;
+}

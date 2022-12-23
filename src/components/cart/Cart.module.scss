@@ -1,0 +1,23 @@
+.cartBtn {
+    @apply w-10 h-10 rounded-full bg-Primary grid place-items-center cursor-pointer;
+}
+
+.cartCont {
+    @apply hidden absolute right-[5%] translate-y-[130%] bg-Primary w-[90%] max-w-[335px] p-3 rounded-md z-20 shadow-sm;
+
+    .header {
+        @apply flex items-center justify-between;
+
+        .close {
+            @apply cursor-pointer;
+        }
+    }
+}
+
+.backdrop {
+    @apply w-screen h-screen left-0 top-0 -z-10 absolute;
+}
+
+.active {
+    @apply block;
+}

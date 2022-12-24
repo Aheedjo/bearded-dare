@@ -1,5 +1,5 @@
 .hamburger {
-    @apply w-10 h-10 rounded-full bg-Primary grid place-items-center cursor-pointer;
+    @apply w-10 h-10 rounded-full bg-Secondary grid place-items-center cursor-pointer;
     @apply grid md:hidden place-items-center;
 
     .hamburgerImg {
@@ -11,14 +11,14 @@
     @apply w-full h-screen top-0 right-0 absolute flex md:hidden translate-x-full transition-all;
 
     .mobileMenu {
-        @apply w-[60%] h-full bg-Primary rounded-tl-3xl p-5 sm:p-7 pb-10 z-10;
+        @apply w-[60%] h-full bg-Secondary rounded-tl-3xl p-5 sm:p-7 pb-10 z-10;
         @apply flex flex-col justify-between;
 
         .close {
             @apply w-full flex justify-end;
 
             .closeImg {
-                @apply w-10 h-10 object-cover text-Secondary cursor-pointer;
+                @apply w-10 h-10 object-cover text-Headers cursor-pointer;
             }
         }
 

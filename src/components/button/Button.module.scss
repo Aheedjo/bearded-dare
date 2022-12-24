@@ -1,0 +1,11 @@
+.btn {
+    @apply w-72 py-1 rounded-md mt-2;
+}
+
+.light {
+    @apply bg-Secondary;
+}
+
+.dark {
+    @apply bg-Primary;
+}

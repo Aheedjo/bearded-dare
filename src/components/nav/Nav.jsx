@@ -7,7 +7,7 @@ import MobileNav from "../mobile-nav/MobileNav";
 
 const Nav = () => {
     return (
-        <>
+        <div className={styles.navWrapper}>
             <div className={styles.navCont}>
                 <div className={styles.logo}>
                     <Image className={styles.image} src={logo} alt="Logo"></Image>
@@ -31,7 +31,7 @@ const Nav = () => {
                     <MobileNav />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

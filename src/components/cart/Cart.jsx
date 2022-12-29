@@ -18,7 +18,7 @@ const Cart = () => {
                     <AiFillCloseCircle className={styles.close} onClick={toggleCart} />
                 </div>
             </div>
-            <div className={styles.backdrop} onClick={closeCart}></div>
+            <div className={showCart ?? styles.backdrop} onClick={closeCart}></div>
         </>
     );
 };

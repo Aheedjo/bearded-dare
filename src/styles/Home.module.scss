@@ -14,11 +14,11 @@
     align-items: center;
 }
 
-.header {
+header.header {
     @apply bg-Primary;
 
     .heroSection {
-        @apply h-[calc(100vh-90px)] py-14 bg-Primary;
+        @apply h-[calc(100vh-90px)] py-14 bg-Primary -z-20;
 
         .content {
             @apply flex flex-col gap-4 w-[90%] mx-auto max-w-[1440px];
@@ -52,7 +52,7 @@
     }
 
     .product {
-        @apply bg-Primary py-16 h-[600px] flex items-end md:h-max;
+        @apply bg-Primary py-12 md:py-32 h-[600px] flex items-end md:h-max;
 
         .content {
             @apply flex flex-col gap-2;
@@ -63,6 +63,62 @@
 
             .description {
                 @apply max-w-[600px] text-Headers;
+            }
+        }
+    }
+}
+
+.aboutSection {
+    @apply py-12 grid grid-rows-2 md:grid-cols-2 items-center gap-5 md:gap-20;
+
+    .imagesCont {
+        @apply flex flex-col gap-3;
+
+        .image1 {
+            @apply bg-Text h-28 md:h-36 rounded-lg w-full;
+        }
+
+        .image2 {
+            @apply bg-Text h-48 sm:h-56 md:h-60 rounded-lg w-full;
+        }
+    }
+
+    .textCont {
+        .text {
+            @apply flex flex-col gap-2;
+        }
+    }
+}
+
+.benefitsSection {
+    @apply py-20;
+
+    .benefitsCont {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-x-10 sm:gap-y-5 md:gap-20 md:gap-y-14 mt-10;
+    }
+
+    .icon {
+        @apply w-14 h-14 rounded-full bg-Headers mb-3;
+    }
+}
+
+.testimonialsSection {
+    @apply py-20;
+
+    .testimonialsCont {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-x-10 sm:gap-y-5 md:gap-20 md:gap-y-14 mt-5;
+
+        .testimonial {
+            .text {
+                @apply text-lg font-semibold;
+            }
+
+            .details {
+                @apply flex items-center gap-3 mt-3;
+
+                .avatar {
+                    @apply w-10 h-10 rounded-full bg-Headers;
+                }
             }
         }
     }

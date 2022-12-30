@@ -1,7 +1,7 @@
 import React from "react";
 
-const product = () => {
+const Product = () => {
     return <div></div>;
 };
 
-export default product;
+export default Product;

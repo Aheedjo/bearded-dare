@@ -29,16 +29,16 @@ const MobileNav = () => {
                         </div>
                         <nav className={styles.links}>
                             <div className={styles.link}>
-                                <Link href="">Home</Link>
+                                <Link href="/">Home</Link>
                             </div>
                             <div className={styles.link}>
-                                <Link href="">About</Link>
+                                <Link href="/About">About</Link>
                             </div>
                             <div className={styles.link}>
-                                <Link href="">Products</Link>
+                                <Link href="/Products">Products</Link>
                             </div>
                             <div className={styles.link}>
-                                <Link href="">Contact</Link>
+                                <Link href="/Contact">Contact</Link>
                             </div>
                         </nav>
                     </div>

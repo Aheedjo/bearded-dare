@@ -15,7 +15,6 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className={styles.header}>
-                <Nav />
                 <section className={styles.heroSection}>
                     <div className={`${styles.content} ${styles.container}`}>
                         <h1>Lorem ipsum dolor sit amet.</h1>
@@ -123,8 +122,6 @@ export default function Home() {
                     })}
                 </div>
             </section>
-
-            <Footer />
         </>
     );
 }

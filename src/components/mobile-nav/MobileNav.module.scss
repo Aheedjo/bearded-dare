@@ -11,7 +11,7 @@
     @apply w-full h-screen top-0 right-0 absolute flex md:hidden translate-x-full transition-all;
 
     .mobileMenu {
-        @apply w-[60%] h-full bg-Secondary rounded-tl-3xl p-5 sm:p-7 pb-10 z-10;
+        @apply w-[40%] sm:w-[60%] h-full bg-Secondary rounded-tl-3xl p-5 sm:p-7 pb-10 z-10;
         @apply flex flex-col justify-between;
 
         .close {
@@ -44,7 +44,7 @@
     }
 
     .backdrop {
-        @apply w-[40%] h-full;
+        @apply w-[60%] sm:w-[50%]  h-full;
     }
 }
 

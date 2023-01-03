@@ -5,7 +5,7 @@
 
 html,
 body {
-    @apply bg-Secondary m-0 p-0 font-['Caudex'] overflow-x-hidden;
+    @apply m-0 p-0 font-['Caudex'] overflow-x-hidden bg-[url('../assets/bg.svg')] bg-cover bg-no-repeat;
 }
 
 a {
@@ -37,9 +37,13 @@ h3 {
 }
 
 h4 {
-    @apply text-lg sm:text-xl md:text-2xl;
+    @apply text-xl md:text-2xl mb-2;
 }
 
 * {
     box-sizing: border-box;
+}
+
+section {
+    @apply mb-14 md:mb-20;
 }

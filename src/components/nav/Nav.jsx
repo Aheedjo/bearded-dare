@@ -4,8 +4,11 @@ import Image from "next/image";
 import logo from "../../assets/logo.svg";
 import Cart from "../cart/Cart";
 import MobileNav from "../mobile-nav/MobileNav";
+import { useGlobalContext } from "../../context/context";
 
 const Nav = () => {
+    const { active, setActive } = useGlobalContext();
+
     return (
         <div className={styles.navWrapper}>
             <div className={styles.navCont}>
@@ -14,7 +17,9 @@ const Nav = () => {
                 </div>
                 <nav className={styles.links}>
                     <div className={styles.link}>
-                        <Link href="/">Home</Link>
+                        <Link href="/" className={active == "home" ?? "active"}>
+                            Home
+                        </Link>
                     </div>
                     <div className={styles.link}>
                         <Link href="/About">About</Link>

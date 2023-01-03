@@ -27,7 +27,7 @@ const MobileNav = () => {
                         <div className={styles.close} onClick={toggleNav}>
                             <AiFillCloseCircle className={styles.closeImg} />
                         </div>
-                        <nav className={styles.links}>
+                        <nav className={styles.links} onClick={closeNav}>
                             <div className={styles.link}>
                                 <Link href="/">Home</Link>
                             </div>

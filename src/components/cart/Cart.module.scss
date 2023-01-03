@@ -1,9 +1,9 @@
 .cartBtn {
-    @apply w-10 h-10 rounded-full bg-Secondary grid place-items-center cursor-pointer;
+    @apply w-10 md:w-12 h-10 md:h-12 rounded-full bg-Primary bg-opacity-30 hover:bg-opacity-40 grid place-items-center cursor-pointer transition-all;
 }
 
 .cartCont {
-    @apply hidden absolute right-[5%] translate-y-[130%] bg-Secondary w-[90%] max-w-[335px] p-3 rounded-md z-20 shadow-sm;
+    @apply hidden absolute right-[5%] translate-y-[130%] bg-Primary w-[90%] max-w-[335px] p-3 rounded-md z-20 shadow-sm;
 
     .header {
         @apply flex items-center justify-between;

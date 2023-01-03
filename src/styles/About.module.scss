@@ -1,0 +1,44 @@
+.container {
+    @apply w-[90%] max-w-[1440px] mx-auto mt-10;
+
+    header h1 {
+        @apply text-center max-w-md md:max-w-lg mx-auto;
+    }
+
+    .imagesCont {
+        @apply w-full md:w-[80%] mx-auto h-72 lg:h-96 grid grid-cols-3 mb:grid-cols-5 gap-2 md:gap-4 mt-5 md:mt-10;
+
+        .image {
+            @apply h-full w-full bg-Headers rounded-lg;
+        }
+
+        .imageEnd {
+            @apply hidden mb:block h-[50%] md:h-[60%] my-auto;
+        }
+
+        .imageL,
+        .imageR {
+            @apply h-[calc(100%-8px)] mb:h-[75%] md:h-[80%] my-auto grid grid-rows-[37%_63%] gap-2 md:gap-4;
+        }
+
+        .imageR {
+            @apply grid-rows-[63%_37%];
+        }
+    }
+
+    .textCont1 {
+        @apply flex flex-col md:flex-row gap-5;
+    }
+
+    .textCont2 {
+        @apply grid grid-rows-[288px_auto] md:grid-cols-[40%_60%] items-center gap-8 md:gap-16;
+
+        .image {
+            @apply w-full md:max-w-2xl h-72 bg-Headers rounded-lg;
+        }
+
+        .textWrapper {
+            @apply flex flex-col gap-3;
+        }
+    }
+}

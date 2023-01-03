@@ -1,19 +1,19 @@
 .footer {
-    @apply border-t-4 border-Primary border-solid py-7 mt-5;
+    @apply border-t-4 border-Primary border-solid py-3 sm:py-5 mt-5;
 
     .container {
         @apply w-[90%] max-w-[1440px] mx-auto;
 
         > div {
-            @apply flex items-center justify-between py-5;
+            @apply flex flex-col mb:flex-row items-center justify-between py-8 sm:py-5 gap-8;
         }
 
         > div:last-of-type {
-            @apply border-t border-Primary border-solid py-5;
+            @apply border-t border-Primary border-solid py-5 flex-col-reverse mb:flex-row;
         }
 
         .links {
-            @apply flex items-center gap-7;
+            @apply flex items-center gap-4 sm:gap-7;
 
             .link {
                 @apply hover:text-Primary transition-all;

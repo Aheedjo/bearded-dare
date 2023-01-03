@@ -5,6 +5,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false);
     const [showCart, setShowCart] = useState(false);
+    const [active, setActive] = useState("home");
 
     const toggleNav = () => {
         setShowNav(!showNav);
@@ -32,6 +33,8 @@ const AppProvider = ({ children }) => {
                 showCart,
                 toggleCart,
                 closeCart,
+                active,
+                setActive,
             }}
         >
             {children}

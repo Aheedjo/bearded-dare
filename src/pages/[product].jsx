@@ -8,7 +8,7 @@ const Product = () => {
             <header>
                 <h2>Lorem ipsum dolor sit.</h2>
             </header>
-            <div className={styles.wrapper}>
+            <section className={styles.wrapper}>
                 <ProductCard />
                 <div className={styles.text}>
                     <div className={styles.about}>
@@ -58,17 +58,17 @@ const Product = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.images}>
-                <div className={styles.wrapper}>
+            </section>
+            <section className={styles.images}>
+                <div className={styles.imgWrapper}>
                     <div className={styles.img}></div>
                     <div className={styles.img}></div>
                 </div>
-                <div className={styles.wrapper}>
+                <div className={styles.imgWrapper}>
                     <div className={styles.img}></div>
                     <div className={styles.img}></div>
                 </div>
-            </div>
+            </section>
         </main>
     );
 };

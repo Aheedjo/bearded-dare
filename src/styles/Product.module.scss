@@ -2,7 +2,7 @@
     @apply w-[90%] mx-auto max-w-[1440px] mt-5 lg:mt-0;
 
     header {
-        @apply mb-5;
+        @apply mb-5 lg:mb-7;
     }
 
     .wrapper {
@@ -24,6 +24,22 @@
                     @apply grid lg:grid-cols-2 gap-5;
                 }
             }
+        }
+    }
+
+    .images {
+        @apply flex gap-3 w-full h-72 md:h-96;
+
+        .imgWrapper {
+            @apply grid grid-rows-[35%_65%] gap-3 w-full h-full;
+
+            .img {
+                @apply w-full h-full bg-Headers rounded-md;
+            }
+        }
+
+        .imgWrapper:last-of-type {
+            @apply grid-rows-[65%_35%];
         }
     }
 }

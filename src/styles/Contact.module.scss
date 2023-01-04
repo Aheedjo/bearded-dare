@@ -1,0 +1,23 @@
+.container {
+    @apply w-[90%] max-w-[1440px] mx-auto mt-5 md:mt-0;
+
+    header {
+        @apply max-w-2xl;
+    }
+
+    .form {
+        > div {
+            @apply flex flex-col gap-4 mt-5 mb-1;
+
+            div {
+                #input {
+                    @apply px-3 py-3 bg-Headers bg-opacity-10 rounded-md w-full outline-none;
+                }
+            }
+
+            > div:first-of-type {
+                @apply grid lg:grid-cols-3 gap-4;
+            }
+        }
+    }
+}

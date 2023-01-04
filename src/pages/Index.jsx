@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Nav from "../components/nav/Nav";
 import Button from "../components/button/Button";
-import Footer from "../components/footer/Footer";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { benefits, testimonials } from "../data/data";
 

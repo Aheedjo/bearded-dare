@@ -1,5 +1,5 @@
 .container {
-    @apply w-[90%] max-w-[1440px] mx-auto mt-10;
+    @apply w-[90%] max-w-[1440px] mx-auto mt-5;
 
     header h1 {
         @apply text-center max-w-md md:max-w-lg mx-auto;
@@ -27,7 +27,7 @@
     }
 
     .textCont1 {
-        @apply flex flex-col md:flex-row gap-5;
+        @apply flex flex-col md:flex-row gap-5 md:gap-20;
     }
 
     .textCont2 {

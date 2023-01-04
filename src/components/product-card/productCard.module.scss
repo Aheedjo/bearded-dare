@@ -4,7 +4,7 @@
     }
 
     .details {
-        @apply flex gap-10 mb-4 items-center;
+        @apply flex gap-10 mb-4 items-start;
 
         .name {
             @apply whitespace-nowrap;

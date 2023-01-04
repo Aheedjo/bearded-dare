@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <main className={styles.container}>
             <header>
-                <h1>Contact</h1>
+                <h2>Contact</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut omnis beatae fugit tempore earum
                     molestiae totam, repellat ipsum aliquam voluptatum!

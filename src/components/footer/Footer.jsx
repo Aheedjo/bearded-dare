@@ -23,7 +23,7 @@ const Footer = () => {
                             <Link href="/products">Products</Link>
                         </div>
                         <div className={styles.link}>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/Contact">Contact</Link>
                         </div>
                     </nav>
                 </div>

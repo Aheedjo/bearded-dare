@@ -1,0 +1,29 @@
+.container {
+    @apply w-[90%] mx-auto max-w-[1440px] mt-5 lg:mt-0;
+
+    header {
+        @apply mb-5;
+    }
+
+    .wrapper {
+        @apply grid lg:grid-cols-[40%_55%] items-center gap-10 lg:gap-16;
+
+        .text {
+            .about {
+                @apply flex-col flex gap-2;
+
+                p {
+                    @apply w-full;
+                }
+            }
+
+            .ingredents {
+                @apply mt-5;
+
+                .wrapper {
+                    @apply grid lg:grid-cols-2 gap-5;
+                }
+            }
+        }
+    }
+}

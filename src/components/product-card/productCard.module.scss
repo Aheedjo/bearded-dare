@@ -1,0 +1,22 @@
+.container {
+    .image {
+        @apply w-full h-64 max-w-lg mx-auto bg-Headers rounded-md mb-5;
+    }
+
+    .details {
+        @apply flex gap-10 mb-4 items-center;
+
+        .name {
+            @apply whitespace-nowrap;
+        }
+
+        .quantityCont {
+            @apply flex items-center gap-5 px-2 border border-solid border-Headers rounded w-max;
+
+            .up,
+            .down {
+                @apply font-black cursor-pointer;
+            }
+        }
+    }
+}

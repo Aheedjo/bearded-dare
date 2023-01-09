@@ -5,7 +5,7 @@
 
 html,
 body {
-    @apply m-0 p-0 font-['Caudex'] overflow-x-hidden bg-[url('../assets/bg.svg')] bg-cover bg-no-repeat;
+    @apply m-0 pt-12 lg:pt-14 font-['Caudex'] overflow-x-hidden bg-[url('../assets/bg.svg')] bg-cover bg-no-repeat;
 }
 
 a {

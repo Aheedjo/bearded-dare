@@ -1,5 +1,6 @@
 .navWrapper {
-    @apply py-5 md:py-10;
+    @apply fixed top-0 left-0 w-full py-3 shadow-sm;
+    @apply bg-[url("../../assets/bg.svg")] bg-cover bg-no-repeat;
 
     .navCont {
         @apply flex items-center justify-between w-[90%] mx-auto max-w-[1440px];

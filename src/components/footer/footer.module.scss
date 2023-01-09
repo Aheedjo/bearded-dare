@@ -1,5 +1,5 @@
 .footer {
-    @apply border-t-4 border-Primary border-solid py-3 sm:py-5 mt-16;
+    @apply border-t-4 border-Headers border-solid border-opacity-30 py-3 sm:py-5 mt-16;
 
     .container {
         @apply w-[90%] max-w-[1440px] mx-auto;
@@ -9,7 +9,7 @@
         }
 
         > div:last-of-type {
-            @apply border-t border-Primary border-solid py-5 flex-col-reverse mb:flex-row;
+            @apply border-t border-Headers border-solid border-opacity-20 py-5 flex-col-reverse mb:flex-row;
         }
 
         .links {

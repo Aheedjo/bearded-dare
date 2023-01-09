@@ -9,10 +9,8 @@
         > div {
             @apply flex flex-col gap-4 mt-5 mb-1;
 
-            div {
-                #input {
-                    @apply px-3 py-3 bg-Headers bg-opacity-10 rounded-md w-full outline-none;
-                }
+            #input {
+                @apply px-3 py-3 bg-Headers bg-opacity-10 rounded-md w-full outline-none;
             }
 
             > div:first-of-type {

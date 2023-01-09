@@ -4,16 +4,6 @@
     margin: 0 auto;
 }
 
-.main {
-    min-height: 100vh;
-    padding: 4rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .heroSection {
     @apply h-[calc(100vh-90px)] py-14 -z-20;
 
@@ -63,7 +53,7 @@
 }
 
 .aboutSection {
-    @apply py-12 grid grid-rows-2 md:grid-cols-2 items-center gap-5 md:gap-20;
+    @apply py-12 grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 items-center gap-5 md:gap-20;
 
     .imagesCont {
         @apply flex flex-col gap-3;

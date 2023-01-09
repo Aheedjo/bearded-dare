@@ -1,20 +1,33 @@
 .container {
     @apply w-[90%] max-w-[1440px] mx-auto mt-5 md:mt-0;
+    @apply grid lg:grid-cols-[35%_65%] gap-10;
 
-    header {
-        @apply max-w-2xl;
+    .contactDetails {
+        .emailPhone {
+            div {
+                @apply flex items-center gap-3 mt-4;
+            }
+        }
+
+        .socialLinks {
+            @apply text-2xl text-Headers flex items-center gap-5 mt-4;
+        }
     }
 
-    .form {
-        > div {
-            @apply flex flex-col gap-4 mt-5 mb-1;
+    .formCont {
+        @apply bg-Primary bg-opacity-10 rounded-md p-5;
 
-            #input {
-                @apply px-3 py-3 bg-Headers bg-opacity-10 rounded-md w-full outline-none;
-            }
+        .form {
+            > div {
+                @apply flex flex-col gap-4 mt-5;
 
-            > div:first-of-type {
-                @apply grid lg:grid-cols-3 gap-4;
+                #input {
+                    @apply px-3 py-3 bg-Headers bg-opacity-10 rounded-md w-full outline-none;
+                }
+
+                > div:not(:last-of-type) {
+                    @apply grid lg:grid-cols-2 gap-4;
+                }
             }
         }
     }

@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    @apply text-xl md:text-2xl mb-2;
+    @apply text-xl md:text-2xl;
 }
 
 * {
@@ -46,4 +46,8 @@ h4 {
 
 section {
     @apply mb-14 md:mb-20;
+}
+
+.box {
+    @apply bg-Primary bg-opacity-10 rounded-md p-4 shadow-sm;
 }

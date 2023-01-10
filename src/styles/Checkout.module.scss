@@ -5,7 +5,7 @@
         @apply lg:hidden w-full mt-5;
 
         .bar {
-            @apply bg-Primary bg-opacity-5 rounded-full w-full h-4 relative;
+            @apply bg-Primary bg-opacity-10 rounded-full w-full h-4 relative;
 
             .progress {
                 @apply w-14 h-full rounded-full bg-Headers relative;
@@ -26,10 +26,10 @@
     }
 
     .wrapper {
-        @apply grid lg:grid-cols-[70%_30%] gap-5 md:gap-10 mt-5;
+        @apply grid lg:grid-cols-[70%_30%] gap-5 mt-5;
 
         .left {
-            @apply flex flex-col gap-5;
+            @apply hidden lg:flex flex-col gap-5;
 
             header {
                 @apply mb-3;
@@ -49,11 +49,15 @@
         }
 
         .right {
-            @apply flex flex-col gap-5 md:gap-10;
+            @apply flex flex-col-reverse lg:flex-col gap-5;
 
             .contact {
                 div {
                     @apply flex items-center gap-3 mt-1;
+
+                    span:last-of-type {
+                        @apply underline;
+                    }
                 }
             }
 
@@ -69,9 +73,9 @@
                         }
 
                         .details {
-                            @apply flex items-end justify-between gap-10;
+                            @apply flex items-end gap-12;
 
-                            div:first-of-type {
+                            div {
                                 p {
                                     @apply text-Headers font-semibold;
                                 }

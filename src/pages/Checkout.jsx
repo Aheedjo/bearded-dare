@@ -81,15 +81,14 @@ const Checkout = () => {
                         <div>
                             <AiOutlinePhone />
                             <div>
-                                <span>Call us on</span>
-
+                                <span>Call us on:</span>
                                 <span>+234 912 3456 789</span>
                             </div>
                         </div>
                         <div>
                             <AiOutlineMail />
                             <div>
-                                <span>Email us using </span>
+                                <span>Email us using:</span>
                                 <span>mail@email.com</span>
                             </div>
                         </div>

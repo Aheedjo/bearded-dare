@@ -9,8 +9,27 @@ const Checkout = () => {
         <main className={styles.container}>
             <header className={styles.header}>
                 <h1>Checkout</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam necessitatibus corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </header>
+            <div className={styles.progressBar}>
+                <div className={styles.bar}>
+                    <div className={styles.progress}>
+                        <div className={styles.circle}></div>
+                    </div>
+                    <div className={styles.circle}></div>
+                </div>
+                <div className={styles.tags}>
+                    <p>
+                        Personal <br /> Details
+                    </p>
+                    <p>
+                        Shipping <br /> Details
+                    </p>
+                    <p>
+                        Payment <br /> Details
+                    </p>
+                </div>
+            </div>
             <div className={styles.wrapper}>
                 <div className={`box ${styles.left}`}>
                     <div>

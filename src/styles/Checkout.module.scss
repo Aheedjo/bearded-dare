@@ -1,8 +1,32 @@
 .container {
     @apply w-[90%] mx-auto max-w-[1440px];
 
+    .progressBar {
+        @apply lg:hidden w-full mt-5;
+
+        .bar {
+            @apply bg-Primary bg-opacity-5 rounded-full w-full h-4 relative;
+
+            .progress {
+                @apply w-14 h-full rounded-full bg-Headers relative;
+
+                .circle {
+                    @apply border-none bg-Secondary top-[2px] right-[2px];
+                }
+            }
+
+            .circle {
+                @apply w-3 h-3 rounded-full absolute border border-solid border-Headers top-[2px] right-[2px];
+            }
+        }
+
+        .tags {
+            @apply mt-3 flex justify-between items-center;
+        }
+    }
+
     .wrapper {
-        @apply grid md:grid-cols-[70%_30%] gap-5 md:gap-10 mt-5;
+        @apply grid lg:grid-cols-[70%_30%] gap-5 md:gap-10 mt-5;
 
         .left {
             @apply flex flex-col gap-5;

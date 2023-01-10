@@ -1,5 +1,5 @@
 .navWrapper {
-    @apply fixed top-0 left-0 w-full py-3 shadow-sm;
+    @apply fixed top-0 left-0 w-full py-3 shadow-sm z-50;
     @apply bg-[url("../../assets/bg.svg")] bg-cover bg-no-repeat;
 
     .navCont {

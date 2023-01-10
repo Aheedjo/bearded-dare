@@ -5,7 +5,7 @@
         @apply lg:hidden w-full mt-5;
 
         .bar {
-            @apply bg-Primary bg-opacity-10 rounded-full w-full h-4 relative;
+            @apply bg-Primary bg-opacity-10 rounded-full w-full h-4 shadow-sm relative;
 
             .progress {
                 @apply w-14 h-full rounded-full bg-Headers relative;

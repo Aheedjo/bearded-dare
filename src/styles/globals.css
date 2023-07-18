@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap");
+@import '~animate.css/animate.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
-    @apply m-0 pt-12 lg:pt-14 font-['Caudex'] overflow-x-hidden bg-[url('../assets/bg.svg')] bg-cover bg-no-repeat;
+    @apply m-0 pt-12 lg:pt-14 font-['Caudex'] overflow-x-hidden;
 }
 
 a {

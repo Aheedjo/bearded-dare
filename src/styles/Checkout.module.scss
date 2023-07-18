@@ -8,7 +8,7 @@
             @apply bg-Primary bg-opacity-10 rounded-full w-full h-4 shadow-sm relative;
 
             .progress {
-                @apply w-14 h-full rounded-full bg-Headers relative;
+                @apply transition-all h-full rounded-full bg-Headers relative;
 
                 .circle {
                     @apply border-none bg-Secondary top-[2px] right-[2px];
@@ -28,19 +28,23 @@
     .wrapper {
         @apply grid lg:grid-cols-[70%_30%] gap-5 mt-5;
 
+        .inputsCont {
+            @apply grid lg:grid-cols-2 gap-3;
+
+            .inputCont .error {
+                color: #ff0000 !important;
+            }
+
+            .doubleInput {
+                @apply grid md:grid-cols-2 gap-3;
+            }
+        }
+
         .left {
-            @apply hidden lg:flex flex-col gap-5;
+            @apply flex flex-col gap-5;
 
             header {
                 @apply mb-3;
-            }
-
-            .inputsCont {
-                @apply grid md:grid-cols-2 gap-3;
-
-                div {
-                    @apply grid grid-cols-2 gap-3;
-                }
             }
 
             .address {
@@ -48,8 +52,25 @@
             }
         }
 
+        .mobile {
+            @apply lg:hidden;
+
+            .controls {
+                @apply mt-5 flex items-center justify-between;
+
+                .backBtn {
+                    @apply cursor-pointer hover:underline;
+                }
+            }
+        }
+
+        .desktop {
+            @apply hidden lg:block;
+        }
+
         .right {
             @apply flex flex-col-reverse lg:flex-col gap-5;
+
 
             .contact {
                 div {
@@ -66,14 +87,14 @@
                     @apply flex flex-col gap-3 my-3;
 
                     .order {
-                        @apply flex items-center gap-3;
+                        @apply flex items-center gap-3 w-full;
 
                         .image {
-                            @apply w-16 h-16 rounded-md bg-Headers;
+                            @apply min-w-[4rem] h-16 rounded-md bg-Headers;
                         }
 
                         .details {
-                            @apply flex items-end gap-12;
+                            @apply flex items-end justify-between w-full;
 
                             div {
                                 p {

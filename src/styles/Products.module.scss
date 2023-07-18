@@ -1,0 +1,40 @@
+.container {
+    @apply w-[90%] mx-auto max-w-[1440px];
+
+    .header {
+        @apply mb-5;
+    }
+
+    .productCategory {
+        @apply mb-10;
+
+        .categoryName {
+            @apply mb-3;
+        }
+
+        .products {
+            @apply grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full gap-5;
+
+            .productCont {
+                @apply bg-Primary bg-opacity-10 rounded-md shadow-sm p-3;
+
+                .image {
+                    @apply mb-2 w-full h-36 rounded-sm;
+                }
+
+                .details {
+                    @apply flex flex-col gap-1;
+
+                    .name,
+                    .price {
+                        @apply text-xl;
+                    }
+                }
+
+                .addToCart {
+                    @apply w-12 h-12 rounded-full bg-Headers mt-2;
+                }
+            }
+        }
+    }
+}

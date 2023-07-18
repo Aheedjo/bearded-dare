@@ -56,7 +56,7 @@ const Contact = () => {
                             <textarea name="" id={styles.input} cols="30" rows="8" placeholder="Message"></textarea>
                         </div>
                     </div>
-                    <Button text={"Submit Message"} />
+                    <Button text={"Submit Message"} width="full"/>
                 </form>
             </div>
         </main>

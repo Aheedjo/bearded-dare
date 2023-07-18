@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import cart from "../../assets/cart.svg";
 import styles from "./Cart.module.scss";
-import Button from "../button/Button"
+import Button from "../button/Button";
 
 const Cart = () => {
     const { showCart, toggleCart, closeCart } = useGlobalContext();

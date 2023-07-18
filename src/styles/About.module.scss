@@ -6,19 +6,19 @@
     }
 
     .imagesCont {
-        @apply w-full md:w-[80%] mx-auto h-72 lg:h-96 grid grid-cols-3 mb:grid-cols-5 gap-2 md:gap-4 mt-5 md:mt-10;
+        @apply w-full md:w-[80%] mx-auto h-72 lg:h-96 grid grid-cols-3 sm:grid-cols-5 gap-2 md:gap-4 mt-5 md:mt-10;
 
         .image {
             @apply h-full w-full bg-Headers rounded-lg;
         }
 
         .imageEnd {
-            @apply hidden mb:block h-[50%] md:h-[60%] my-auto;
+            @apply hidden sm:block h-[50%] md:h-[60%] my-auto;
         }
 
         .imageL,
         .imageR {
-            @apply h-[calc(100%-8px)] mb:h-[75%] md:h-[80%] my-auto grid grid-rows-[37%_63%] gap-2 md:gap-4;
+            @apply h-[calc(100%-8px)] sm:h-[75%] md:h-[80%] my-auto grid grid-rows-[37%_63%] gap-2 md:gap-4;
         }
 
         .imageR {

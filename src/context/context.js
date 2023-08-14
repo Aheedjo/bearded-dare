@@ -49,7 +49,9 @@ const AppProvider = ({ children }) => {
         setIndex(index - 1);
     }
 
-    const validateForm = () => {
+    const validateForm = (e) => {
+        e.preventDefault();
+        console.log("clci");
         firstName === '' ?? setFirstNameError('This field is required');
         lastName === '' ?? setLastNameError('This field is required');
         validateEmail(email) ?? setEmailError('Please enter a valid email address');
@@ -57,19 +59,65 @@ const AppProvider = ({ children }) => {
         address === '' ?? setAddressError('This field is required');
         state === '' ?? setStateError('This field is required');
         localGovernment === '' ?? setLocalGovernmentError('This field is required');
-        console.log("clci");
 
-        if (firstNameError !== '' || lastNameError !== '' || emailError !== '' || phoneError !== '' || addressError !== '' || stateError !== '' || localGovernmentError !== '') {
-            return false;
-        } else {
-            return true;
-        }
+        return (
+            firstNameError !== '' ||
+            lastNameError !== '' ||
+            emailError !== '' ||
+            phoneError !== '' ||
+            addressError !== '' ||
+            stateError !== '' ||
+            localGovernmentError !== ''
+        );
     }
 
     const validateEmail = (email) => {
         const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;   
         return regex.test(email);
     }
+
+    const [products, setProducts] = useState([
+        {
+            id: 1,
+            name: "Sample product",
+            description: "This is a sample description description",
+            price: 50000,
+            category: 'hair',
+            image: "/../../assets/photo.webp"
+        },
+        {
+            id: 2,
+            name: "Sample product",
+            description: "This is a sample description description",
+            price: 50000,
+            category: 'hair',
+            image: "/../../assets/photo.webp"
+        },
+        {
+            id: 3,
+            name: "Sample product",
+            description: "This is a sample description description",
+            price: 50000,
+            category: 'merch',
+            image: "/../../assets/photo.webp"
+        },
+        {
+            id: 4,
+            name: "Sample product",
+            description: "This is a sample description description",
+            price: 50000,
+            category: 'merch',
+            image: "/../../assets/photo.webp"
+        },
+        {
+            id: 5,
+            name: "Sample product",
+            description: "This is a sample description description",
+            price: 50000,
+            category: 'hair',
+            image: "/../../assets/photo.webp"
+        },
+    ]);
 
     return (
         <AppContext.Provider
@@ -109,10 +157,11 @@ const AppProvider = ({ children }) => {
                 localGovernmentError,
                 validateForm,
                 register,
-                handleSubmit
+                handleSubmit,
+                products
             }}
         >
-            {children}
+            { children}
         </AppContext.Provider>
     );
 };

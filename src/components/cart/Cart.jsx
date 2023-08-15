@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../../context/context";
 import { AiFillCloseCircle } from "react-icons/ai";
+import CartProduct from "../cart-product/CartProduct";
 import Image from "next/image";
 import Link from "next/link";
 import cart from "../../assets/cart.svg";
@@ -19,11 +20,14 @@ const Cart = () => {
                     <p>Cart</p>
                     <AiFillCloseCircle className={styles.close} onClick={toggleCart} />
                 </div>
+                    <div className="cartProducts">
+                        <CartProduct />
+                    </div>
                 <Link href="/Checkout" onClick={closeCart}>
                     <Button text="checkout" width="full"></Button>
                 </Link>
             </div>
-            <div className={showCart ?? styles.backdrop} onClick={closeCart}></div>
+            { showCart && <div className={styles.backdrop} onClick={closeCart}></div> }
         </>
     );
 };

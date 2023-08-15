@@ -1,0 +1,23 @@
+.cartProduct {
+    @apply grid grid-cols-[auto_1fr] items-center gap-4 w-full mb-3;
+
+    >div {
+        @apply flex items-end justify-between w-full;
+    }
+
+    .image {
+        @apply w-16 h-16 bg-Secondary rounded-lg;
+    }
+
+    .name, .price {
+        @apply text-base text-Secondary;
+    }
+
+    span:not(:nth-of-type(2)) {
+        @apply cursor-pointer;
+    }
+
+    .quantityCont {
+        @apply px-3 rounded-lg border border-solid border-Secondary flex items-center gap-5 text-Secondary text-lg mt-4;
+    }
+}

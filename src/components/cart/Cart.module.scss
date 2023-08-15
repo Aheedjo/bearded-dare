@@ -3,13 +3,17 @@
 }
 
 .cartCont {
-    @apply hidden absolute right-[5%] translate-y-[130%] bg-Primary w-[90%] max-w-[335px] p-3 rounded-md z-20 shadow-sm;
+    @apply hidden absolute right-[5%] top-[120%] bg-Headers w-[90%] max-w-[335px] p-3 rounded-lg z-20 shadow-sm;
 
     .header {
-        @apply flex items-center justify-between;
+        @apply flex items-center justify-between mb-2;
+
+        p {
+            @apply text-Secondary;
+        }
 
         .close {
-            @apply cursor-pointer text-Headers;
+            @apply cursor-pointer text-Secondary;
         }
     }
 }
